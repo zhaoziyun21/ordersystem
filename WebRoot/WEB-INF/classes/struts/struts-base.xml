@@ -1,0 +1,48 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 项目基础平台配置 -->
+	<package name="export" extends="myDefault" namespace="/export">
+		<!-- After login success -->
+		<action name="*BaseExport" class="exportAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		
+		<!-- 图片上传 -->
+		<action name="*BaseUpload" class="uploadAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	 <!-- 用户管理 -->
+	<package name="xuser" extends="myDefault" namespace="/xuser">
+		<action name="*XUser" class="xUserAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	
+	<!-- 角色管理 -->
+	<package name="xrole" extends="myDefault" namespace="/xrole">
+		<action name="*XRole" class="xRoleAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	
+	<!-- 菜单 -->
+	<package name="xmenu" extends="myDefault" namespace="/xmenu">
+		<action name="*XMenu" class="xMenuAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	<!-- 余额 -->
+	<package name="xStaffSum" extends="myDefault" namespace="/staffSum">
+		<action name="*XStaffSum" class="xStaffSumAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+</struts>
+
+		

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>我的订单</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/myorder.css">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/myorder.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+		<div class="contain order">
+			<div class="order-left">订餐系统</div>
+			 <div class="order-right">
+                <span href="javascript:;" class="myorder">我的订单</span>
+                <ul>
+                	<li class="login"></li>
+                	<li class="accuntBalance">账户余额</li>
+                </ul>
+            </div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	
+	<!-- 订单信息开始部分 -->
+	<div class="contain order-object">
+		<div class="object-left">订单信息</div>
+	</div>
+	<!-- 订单信息部分结束 -->
+	
+	<!-- 订餐详情部分开始 -->
+		<div class="contain det">
+			<ul>
+				<li>
+					<div class="detail">
+						<div class="detail-top clearfix">
+						<div class="detail-top-left">
+							<div class="detail-top-left-1"><img src="" class="meal"></div>
+							<div class="detail-top-left-2">
+								<div class="p1">套餐A，套餐B，套餐C，套餐D</div>
+								<div class="p2">订餐对象：<span>李书恒</span></div>
+							</div>
+						</div>
+						<div class="detail-top-middle">
+							<div class="p1">商家电话：<span>010-64462999</span></div>
+							<div class="p2">下单时间：<span>2017-02-22 11:10</span></div>
+						</div>
+						<div class="detail-top-right">
+							<div class="p1"><button>再来一单</button></div>
+							<div class="p2">投诉商家</div>
+						</div>
+					</div>
+					<div class="detail-bottom">
+						<div class="detail-bottom-1">菜品共<pan class="detail-bottom-11">4</pan>份，总计<span class="detail-bottom-12">175.00</span>元</div>
+						<div class="detail-bottom-2">
+							<ul class="clearfix">
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+							</ul>
+						</div>
+						<div class="accountMsg clearfix">
+							<ul>
+								<li class="username">扣除账户：<span>李书恒</span></li>
+								<li class="pay">扣除余额：<span>175.00</span></li>
+								<li class="rest">剩余：<span>300.00</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="detail">
+						<div class="detail-top clearfix">
+						<div class="detail-top-left">
+							<div class="detail-top-left-1"><img src="" class="meal"></div>
+							<div class="detail-top-left-2">
+								<div class="p1">套餐A，套餐B，套餐C，套餐D</div>
+								<div class="p2">订餐对象：<span>李书恒</span></div>
+							</div>
+						</div>
+						<div class="detail-top-middle">
+							<div class="p1">商家电话：<span>010-64462999</span></div>
+							<div class="p2">下单时间：<span>2017-02-22 11:10</span></div>
+						</div>
+						<div class="detail-top-right">
+							<div class="p1"><button>再来一单</button></div>
+							<div class="p2">投诉商家</div>
+						</div>
+					</div>
+					<div class="detail-bottom">
+						<div class="detail-bottom-1">菜品共<pan class="detail-bottom-11">4</pan>份，总计<span class="detail-bottom-12">175.00</span>元</div>
+						<div class="detail-bottom-2">
+							<ul class="clearfix">
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+								<li class="clearfix">
+									<span>套餐A（鱼香茄子+可乐）</span>
+									<span>25*1</span>
+								</li>
+							</ul>
+						</div>
+						<div class="accountMsg clearfix">
+							<ul>
+								<li class="username">扣除账户：<span>李书恒</span></li>
+								<li class="pay">扣除余额：<span>175.00</span></li>
+								<li class="rest">剩余：<span>300.00</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</li>
+			</ul>
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".detail").click(function(){
+					$(this).find(".detail-bottom").slideToggle("slow");
+				})
+			})
+		</script>
+</body>
+</html>

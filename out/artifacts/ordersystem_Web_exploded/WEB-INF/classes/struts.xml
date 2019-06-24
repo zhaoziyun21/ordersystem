@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    
+	<constant name="struts.multipart.maxSize" value="900000000000" />
+	<constant name="struts.action.extension" value="do" />
+	
+	<!-- develoption: true; online: false -->
+	<constant name="struts.devMode" value="true"/>
+	
+	<!-- develoption: true; online: false -->
+	<constant name="struts.convention.classes.reload" value="true" />
+	
+	<!-- 浏览器是否缓存静态内容 -->
+	<!-- 开发阶段，每次请求都获得服务器的最新响应,设置为false -->
+	<!-- 运行阶段，缓存静态内容,设置为true -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 引入资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+	
+	
+	<package name="myDefault" extends="struts-default">
+		<global-results>
+			<result name="msg">/common/public/msg.jsp</result>
+			<result name="ajax">/common/public/ajax.jsp</result>
+			<result name="sessiontimeexception">/common/public/SessionTimeToIndex.jsp</result>
+			<result name="illegalUrlException">/common/public/IllegalUrlMessage.jsp</result>
+			<result name="globalexception">/common/public/error.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="sessiontimeexception" exception="com.kssj.frame.exception.SessionTimeException"/>
+			<exception-mapping result="illegalUrlException" exception="com.kssj.frame.exception.IllegalUrlException"/>
+			<exception-mapping result="globalexception" exception="java.lang.Exception"/>
+	  	</global-exception-mappings>
+	</package>
+
+	<!-- 基础管理功能 -->
+	<include file="struts/struts-base.xml"/>
+	<!-- order -->
+	<include file="struts/struts-order.xml"/>
+	<!-- 产品 -->
+	<include file="struts/struts-product.xml"/>
+</struts>
+
+		

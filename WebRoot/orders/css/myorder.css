@@ -1,0 +1,274 @@
+/* .header {
+    height: 70px;
+    background-color: #FF8F33;
+    width: 100%;
+}
+body {
+    background-color: #EEEEEE;
+    font-family:"Microsoft yahei";
+}
+.order {
+    height: 70px;
+}
+.order-left {
+    float: left;
+    line-height: 70px;
+    color: #FFF;
+    font-size: 18px;
+    margin-left: 22px;
+}
+.order-right {
+    float: right;
+    line-height: 70px;
+    margin-right:53px; 
+    font-weight: 700;
+}
+
+.order-right span{
+    color: #FFF;
+    font-size: 14px;
+}
+.myorder {
+    margin-right: 43px;
+}
+.login-r {
+ position: relative;
+ left: 8px;
+ top:-1px;
+}
+.order-right ul{
+	float:right;
+	color:#FFFFFF;
+	width:74px;
+	font-size:14px;
+}
+.accuntBalance {
+	width:74px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#666666;
+	background-color:#FFFFFF;
+	font-size:14px;
+	margin-top:-21px;
+	display:none; 
+}
+ */
+
+
+.order-object {
+    background-color: #FFF;
+    margin-top: 21px;
+    height: 70px;
+    line-height: 70px;
+}
+.object-left {
+    margin-left: 20px;
+    float: left;
+}
+.det {
+	margin-top:19px;
+	background-color:#FFFFFF;
+	padding-top:29px;
+	padding-bottom:100px;
+}
+.detail {
+	margin-left:135px;
+	padding-top:6px;
+	border-top:1px solid #EFEFEF;
+	margin-right:100px;
+	    margin-bottom: 60px;
+}
+.detail .detail-top {
+	display:left;
+	position:relative;
+}
+.detail .detail-top .detail-top-left-1 {
+	float:left;
+	background-color:#00469C;
+}
+.meal {
+	width: 60px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    left: -75px;
+}
+.detail-top-left-2 {
+	float:left;
+	margin-left:12px;
+	font-size:14px;
+	font-weight:700;
+}
+.detail-top-middle {
+	font-size:14px;
+	position:absolute;
+	left:240px;
+	top:2px;
+}
+.detail-top-middleb {
+	font-size:14px;
+	position:absolute;
+	left:522px;
+	top:20px;
+	color: #999999;
+}
+.detail-top-lefta{
+	font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: #999999;
+}
+.detail-top-middlea{
+	font-size:16px;
+	float:right;
+	color: #666666;
+}
+.detail-top-left-2 .p1,.detail-top-middle .p1 {
+	margin-top:10px;
+	margin-bottom:19px;
+	font-size:14px;
+	color:#666666;
+}
+.detail-top-left-2 .p2,.detail-top-middle .p2,.detail-top-middle .p1, .detail-top-lefta .p2{
+	color:#999999;
+}
+.detail-top-right {
+	float:right;
+}
+.detail-top-right .p1 {
+	margin-top:15px;
+	margin-bottom:12px;
+}
+.detail-top-right .p1 button {
+	color:#666666;
+	width:85px;
+	height:28px;
+	border-radius:5px;
+	font-weight:700;
+	background-color:#F5F5F5;
+	cursor:pointer;
+}
+.detail-top-right .p2 {
+	font-size:12px;
+	text-align:center;
+	color:#999999;
+}
+
+.detail-bottom {
+	margin-top:13px;
+	background-color:#F9F9F9;
+}
+.detail-bottom .detail-bottom-1 {
+	height:36px;
+	line-height:36px;
+	margin-left:22px;
+	color:#666666;
+}
+
+.detail-bottom-1 .detail-bottom-12 {
+	color:#FF8F33;
+}
+ 
+.detail-bottom .detail-bottom-2 ul{
+	margin-top:20px;
+	margin-left:90px;
+
+}
+.detail-bottom-two ul li{
+	margin-top:10px;
+
+
+
+}
+.detail-bottom .detail-bottom-2 li{
+	float:left;
+	position:relative;
+	color:#666666;
+	min-width:245px;
+	    height: 85px;
+}
+.clearfixa{
+	   position: relative;
+}
+.clearfixa li{
+
+    margin-right: 78px;
+ 
+    }
+.clearfixa  span{
+	    margin-left: 108px;
+    display: block;
+    width: 170px;
+    word-wrap: break-word;
+    word-break: break-all;
+    float:left;
+}
+.clearfixa span:nth-child(3){
+	margin-left: 35px;
+}
+.detail-bottom .detail-bottom-2 li:nth-child(even){
+	margin-left:212px;
+	margin-right:173px;
+}
+.detail-bottom .detail-bottom-2 li span:last-child {
+	/* position:absolute;
+	top:0px;
+	left:216px; */
+	margin-left: 30px;
+}
+.accountMsg {
+	margin-left:90px;
+	height:28px;
+	line-height:28px;
+}
+.accountMsga  {
+	margin-left:100px;
+	line-height:26px;
+}
+.accountMsga li {
+    float: left;
+    margin-right: 95px;
+}
+.accountMsga .pay span,.accountMsga .rest span {
+	color:#FF8F33;
+	font-weight:700;
+}
+.clearfix_img{
+	    width: 84px;
+    height: 83px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.accountMsg li {
+	float:left;
+	margin-right:78px;
+}
+.accountMsg .pay span,.accountMsg .rest span {
+	color:#FF8F33;
+	font-weight:700;
+}
+.detail-bottom>div {
+	border-top:1px solid #EFEFEF;
+}
+
+.detail-bottom-dizhi{
+	margin: 3px 10px;
+}
+.detail-bottom-dizhi img{
+	margin-right:5px;
+	float: left;
+}
+.detail-bottom-dizhi span:nth-child(2){
+	font-size: 14px;float: left;
+}
+.detail-bottom-dizhi span:nth-child(3){
+	font-size: 14px;
+	margin-left: 10px;
+}
+.detail-bottom-dizhi span:nth-child(3) span{
+	margin-left: 40px;
+}

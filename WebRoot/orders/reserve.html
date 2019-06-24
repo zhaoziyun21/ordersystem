@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 订餐页面 -->
+    <title>预约订餐</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/reserve.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+     <script type="text/javascript" src="./js/msgbox.js"></script>
+    <script type="text/javascript" src="./js/reserve.js"></script>
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="contain order">
+            <div class="order-left">订餐系统</div>
+            <div class="order-right">
+                <span href="javascript:;" class="myorder">我的订单</span>
+                <ul>
+                	<li class="login"></li>
+                	<li class="accuntBalance">账户余额</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 订餐对象开始部分 -->
+    <div class="contain order-object">
+        <div class="object-left">预定时间：</div>
+        <div class="object-middle">
+        	<select>
+        		<option>周一</option>
+        		<option>周二</option>
+        		<option>周三</option>
+        		<option>周四</option>
+        		<option>周五</option>
+        		<option>周六</option>
+        		<option>周日</option>
+        	</select>
+        </div>
+        <div class="object-right">
+        	<button>返回</button>
+        </div>
+    </div>
+    <!-- 订餐对象部分结束 -->
+    <!-- 餐品开始部分 -->
+    <div class="contain time">午餐</div>
+    <div class="contain meal">
+        <ul class="clearfix">
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                     <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                   <div class="meal-msg">
+                    	<div class="msg-0">套餐D</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐C</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                   <div class="meal-msg">
+                    	<div class="msg-0">套餐B</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="contain time">晚餐</div>
+    <div class="contain meal">
+        <ul class="clearfix">
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                     <div class="meal-msg">
+                    	<div class="msg-0">套餐A</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                   <div class="meal-msg">
+                    	<div class="msg-0">套餐D</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                    <div class="meal-msg">
+                    	<div class="msg-0">套餐C</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="meal-img"></div>
+                   <div class="meal-msg">
+                    	<div class="msg-0">套餐B</div>
+                        <div class="msg-1">咸鱼米饭+可乐+鸡排</div>
+                        <div class="msg-2">剩余<span>20</span>份</div>
+                        <a href="javascript:;" class="msg-3">+</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 餐品结束部分 -->
+    <!-- 购物车开始部分 -->
+    <div class="shoppingcar">
+        <div class="shoppingcar-top">
+            <span class="shoppingcar-top-l">购物车</span>
+            <span class="shoppingcar-top-r">清空</span>
+        </div>
+        <div class="shoppingcar-middle">
+            <ul id="append">
+                <li class="shoppingcar-middle-top">
+                    <span class="middle-top-l">套餐</span>
+                    <span class="middle-top-r">份数</span>
+                </li>
+                
+                <!-- <li class="shoppingcar-middle-bot">
+                    <span class="middle-bot-l">套餐A（鱼香茄子+可乐）</span>
+                    <span class="middle-bot-r">
+                         <span class="jian">-</span>
+                    <span class="number">3</span>
+                    <span class="jia">+</span>
+                    </span>
+                </li>
+                <li class="shoppingcar-middle-bot">
+                    <span class="middle-bot-l">套餐A（鱼香茄子+可乐）</span>
+                    <span class="middle-bot-r">
+                         <span class="jian">-</span>
+                    <span class="number">3</span>
+                    <span class="jia">+</span>
+                    </span>
+                </li>
+                <li class="shoppingcar-middle-bot">
+                    <span class="middle-bot-l">套餐A（鱼香茄子+可乐）</span>
+                    <span class="middle-bot-r">
+	                    <span class="jian">-</span>
+	                    <span class="number">3</span>
+	                    <span class="jia">+</span>
+                    </span>
+                </li>
+                <li class="shoppingcar-middle-bot">
+                    <span class="middle-bot-l">套餐A（鱼香茄子+可乐）</span>
+                    <span class="middle-bot-r">
+                         <span class="jian">-</span>
+	                    <span class="number">3</span>
+	                    <span class="jia">+</span>
+                    </span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="shoppingcar-bottom">
+            <div class="shoppingcar-bottom-l">
+                <span class="buycar">
+                     <img src="./images/buycar.png">
+                 </span>
+                <span class="pay">共￥<span>175.00</span>元</span>
+            </div>
+            <div class="shoppingcar-bottom-r">
+               <!--  <span>选好了</span> -->
+               <span>购物车是空的</span>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车部分结束 -->
+    <div id="choose"></div>
+    <div class="mask"></div>
+</body>
+
+</html>

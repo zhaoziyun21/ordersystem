@@ -1,0 +1,36 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- product -->
+	<package name="product" extends="myDefault" namespace="/product">
+		<!-- 产品 -->
+		<action name="*XProducts" class="xProductsAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		<!-- 产品类别 -->
+		<action name="*XProCategory" class="xProCategoryAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	<!-- receiver -->
+	<package name="receiver" extends="myDefault" namespace="/receiver">
+		<!-- 菜谱 -->
+		<action name="*XReceivers" class="xReceiversAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	<!-- productManage -->
+	<package name="productManage" extends="myDefault" namespace="/productManage">
+		<!-- 产品后台管理 -->
+		<action name="*XProductManage" class="xProductsManageAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+</struts>
+
+		

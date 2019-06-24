@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<style>
+	.yi-box{
+		width: 100%;
+		height:100%;
+		background: rgba(0,0,0,.1);
+
+	}
+	.yi-content{
+		width: 500px;
+		height: 400px;
+		margin: auto;
+		background: #fff;
+		border-radius: 8px;
+		
+		font-size: 18px;
+		position: relative;
+		top:100px;
+
+	}
+	.yiImg{
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		top: -40px;
+		left: 510px;
+	}
+
+		.yi-content ul li{
+			display: block;
+			width: 100%;
+			height:55px;
+			line-height:55px;
+			border-bottom: 1px solid #e9e9e9;
+
+		}
+		.yi-content ul li:nth-child(1){
+			height: 48px;
+			line-height: 48px;
+		}
+		.yi-content ul li span{
+			float: left;
+			padding-left:22px;
+		}
+		.yi-content ul li b{
+			float: right;
+			padding-right: 15px;
+			font-weight: 400;
+		}
+</style>
+<body>
+	<div class="yi-box">
+		
+		<div class="yi-content">
+			<img src="img/311898663450277931.png" alt="" class="yiImg">
+			<ul>
+				<li style="text-align: center;">订餐详情</li>
+
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<span>取餐时间</span>
+					<b>2018/09/06 11:40</b>
+					<div style="clear: both;"></div>
+				</li>
+				
+			</ul>
+		</div>
+
+
+
+	</div>
+</body>
+</html>
+
+
+<script>
+	$(".yiImg").click(function(){
+
+		$(".yi-box").css("display","none")
+	})	
+</script>

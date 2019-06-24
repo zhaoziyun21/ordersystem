@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>外卖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="./css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/reserve.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/msgbox.js"></script>
+    <script type="text/javascript" src="./js/reserve.js"></script>
+</head>
+
+<body>
+	 <div id="mask"></div>
+    <div>
+        <div class="header">
+	        <div class="title">预约订餐</div> 
+        </div>
+        <div class="clearfix">
+        	<div class=week>
+        		<span class="week_1">周一</span>
+        		<ul>
+        			<li><span id="week_1" class="choose">周一 </span><div class="choosed"></div></li>
+        			<li><span id="week_2">周二 </span><div></div></li>
+        			<li><span id="week_3">周三 </span><div></div></li>
+        			<li><span id="week_4">周四 </span><div></div></li>
+        			<li><span id="week_5">周五 </span><div></div></li>
+        			<li><span id="week_6">周六 </span><div></div></li>
+        			<li><span id="week_7">周日 </span><div></div></li>
+        		</ul>
+        	</div>
+        	<div class="time">
+        		<span class="lun_1">午餐</span>
+        		<ul>
+        			<li><span id="lun_1" class="choose">午餐 </span><div class="choosed"></div></li>
+        			<li><span id="din_2">晚餐 </span><div></div></li>
+        		</ul>
+        	</div>
+        </div>
+        <div>
+    		<ul>
+                  		<li class="eve-meal">
+                  			<div class="clearfix total-meal">
+			                    <div class="meal">
+			                        <img src="">
+			                    </div>
+			                    <div class="meal-det">
+			                        <div class="meal-det-top clearfix">
+			                            <div class="mealName">套餐A</div>
+			                        </div>
+			                        <div class="clearfix">
+				                        <div class="total">猪肉粉条+可乐+薯条+西湖牛肉羹</div>
+			                        </div>
+			                        
+			                        <div>
+			                            <div class="orderTime">25元*1</div>
+			                            <div class="jia"></div>
+			                        </div>
+			                    </div>
+                 			 </div>
+                  		</li>
+                  		<li class="eve-meal">
+                  			<div class="clearfix total-meal">
+			                    <div class="meal">
+			                        <img src="">
+			                    </div>
+			                    <div class="meal-det">
+			                        <div class="meal-det-top clearfix">
+			                            <div class="mealName">套餐B</div>
+			                        </div>
+			                        <div class="clearfix">
+				                        <div class="total">猪肉粉条+可乐+薯条+西湖牛肉羹</div>
+			                        </div>
+			                        
+			                        <div>
+			                            <div class="orderTime">25元*1</div>
+			                            <div class="jia"></div>
+			                        </div>
+			                    </div>
+                 			 </div>
+                  		</li>
+                  		<li class="eve-meal">
+                  			<div class="clearfix total-meal">
+			                    <div class="meal">
+			                        <img src="">
+			                    </div>
+			                    <div class="meal-det">
+			                        <div class="meal-det-top clearfix">
+			                            <div class="mealName">套餐C</div>
+			                        </div>
+			                        <div class="clearfix">
+				                        <div class="total">猪肉粉条+可乐+薯条+西湖牛肉羹</div>
+			                        </div>
+			                        
+			                        <div>
+			                            <div class="orderTime">25元*1</div>
+			                            <div class="jia"></div>
+			                        </div>
+			                       <!--  <input type="hidden" name="food_id" value='${food.food_id}'>; -->
+			                    </div>
+                 			 </div>
+                  		</li>
+                  	</ul>
+    	</div>
+    	
+    	<div class="buyCar">
+    			<div class="buyCar-top">
+    				<div class="buyCar-top-l">购物车</div>
+    				<div class="buyCar-top-r">清空</div>
+    			</div>
+    			<div class="buyCar-bottom">
+    				<ul id="append">
+    					<!-- <li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">－</span>
+    							<span class="number">3</span>
+    							<span class="add">＋</span>
+    						</div>
+    					</li> -->
+    				</ul>
+    			</div>
+    	</div>
+    	<div class="footer">
+    		<div class="footer-l">
+    			<div class="car">
+    				<div>
+    					<div class="totalNum">
+    						0
+    					</div>
+    				</div>
+    			</div>
+    			<span class="totalPay">选点什么吧！</span>
+    		</div>
+    		<div class="footer-r">
+    			去结算
+    		</div>
+    		
+    	</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+html {
+	background-color:#EDEDED;
+}
+.header {
+    height: 2.3466667rem;
+    background-color: #FF8F33;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 2.33333rem;
+    text-align: center;
+}
+.current {
+	height:9.54666667rem;
+	text-align:center;
+	background-color:#FFFFFF;
+	padding-top:2.666667rem;
+}
+.current p{
+	color:#666666;
+	text-align:center;
+	font-size:0.8rem;
+	margin-bottom:1.813333rem;
+}
+.current span {
+	color:#FF8F33;
+	font-size:1.3rem;
+}
+.detail {
+	width:100%;
+	height:2.693333rem;
+	margin-top:0.74666667rem;
+	background-color:#FFFFFF;
+	line-height:2.693333rem;
+}
+.detail span {
+	color:#999999;
+	font-size:0.8rem;
+	margin-left:1.44rem;
+}
+.footer {
+	border-top:10px solid #EEEEEE;
+    position: fixed;
+    width: 100%;
+    height: 2.61333333rem;
+    bottom:0px;
+    background-color:#FFFFFF;
+}
+ .footer li{
+    float: left;
+    width: 33.333333%;
+    height: 2.61333333rem;
+    position:relative
+}
+.footer-title {
+    font-size: 0.53333333rem;
+    text-align:center;
+    position:absolute;
+    bottom:0.16rem;
+    width:100%;
+} 
+ .order {
+    background: url("../P-images/1.png") no-repeat center 0.4rem;
+    background-size: 20% auto;
+}
+.myOrder {
+    background: url("../P-images/2.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+}
+.balance {
+    background: url("../P-images/3-3.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+    color: #FF8F33;
+} 

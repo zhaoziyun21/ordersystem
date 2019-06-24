@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="  
+	http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context   
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+	
+	<!-- 菜谱 -->
+	<bean id="xFoodDao" class="com.kssj.order.dao.impl.XFoodDaoImpl" parent="genericDao"/>
+	<!-- 公告 -->
+	<bean id="xNoticeDao" class="com.kssj.order.dao.impl.XNoticeDaoImpl" parent="genericDao"/>
+	<bean id="xNoticeBillDao" class="com.kssj.order.dao.impl.XNoticeBillDaoImpl" parent="genericDao"/>
+	<!-- 派送范围 -->
+	<bean id="xFoodSendRegionDao" class="com.kssj.order.dao.impl.XFoodSendRegionDaoImpl" parent="genericDao"/>
+	<!-- 派送地址 -->
+	<bean id="xFoodSendAddressDao" class="com.kssj.order.dao.impl.XFoodSendAddressDaoImpl" parent="genericDao"/>
+	
+	<!-- 订单 -->
+	<bean id="xOrdersDao" class="com.kssj.order.dao.impl.XOrdersDaoImpl" parent="genericDao"/>
+	<!-- 订单明细 -->
+	<bean id="xOrderDetailDao" class="com.kssj.order.dao.impl.XOrderDetailDaoImpl" parent="genericDao"/>
+	<!-- money记录 -->
+	<bean id="xDetailRecordDao" class="com.kssj.order.dao.impl.XDetailRecordDaoImpl" parent="genericDao"/>
+	<!-- 指定他人订餐dao -->
+	<bean id="relationDao" class="com.kssj.order.dao.impl.XAppointRelationDaoImpl" parent="genericDao"/>
+	<!-- 套餐dao -->
+	<bean id="xFoodBillDao" class="com.kssj.order.dao.impl.XFoodBillDaoImpl" parent="genericDao"/>
+	<!--在线支付  -->
+	<bean id="xOnlineOrdersDao" class="com.kssj.order.dao.impl.XOnlineOrdersDaoImpl" parent="genericDao"/>
+	
+</beans>

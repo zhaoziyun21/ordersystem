@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="  
+	http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context   
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+	
+	<!-- 菜谱 -->
+	<bean id="xFoodAction" class="com.kssj.order.action.XFoodAction" scope="prototype"></bean>
+	<!-- 公告 -->
+	<bean id="xNoticeAction" class="com.kssj.order.action.XNoticeAction" scope="prototype"></bean>
+	<!-- 派送范围 -->
+	<bean id="xFoodSendRegionAction" class="com.kssj.order.action.XFoodSendRegionAction" scope="prototype"></bean>
+	<!-- 派送地址 -->
+	<bean id="xFoodSendAddressAction" class="com.kssj.order.action.XFoodSendAddressAction" scope="prototype"></bean>
+	<!-- 订单 -->
+	<bean id="xOrdersAction" class="com.kssj.order.action.XOrdersAction" scope="prototype"></bean>
+	<!-- weChat -->
+	<bean id="weChatAction" class="com.kssj.order.action.WeChatAction" scope="prototype"></bean>
+	<!-- 在线支付 -->
+	<bean id="onlinePayAction" class="com.kssj.order.action.OnlinePayAction" scope="prototype"></bean>
+	
+</beans>

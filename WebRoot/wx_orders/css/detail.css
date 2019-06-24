@@ -1,0 +1,77 @@
+html {
+	background-color:#EDEDED;
+}
+.header {
+    height: 2.3466667rem;
+    background-color: #FF8F33;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 2.33333rem;
+    text-align: center;
+}
+.detail {
+	background-color:#FFFFFF;
+	padding-left:0.9333333rem;
+	padding-right:0.8rem;
+	margin-bottom:1px;
+}
+.detail-l {
+	float:left;
+	padding-top:0.64rem;
+}
+.detail-l p {
+	color:#666666;
+}
+.allDet {
+	margin-bottom: 2.88rem
+}
+.detail-l>div {
+	max-width: 12rem;
+	white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+.detail-l span {
+	color:#999999;
+	font-size:0.8rem;
+}
+.detail-r {
+	float:right;
+	height:100%;
+	line-height:3.5rem;
+	font-size:0.8rem;
+}
+.footer {
+	border-top:0.266666667rem solid #EEEEEE;
+    position: fixed;
+    width: 100%;
+    height: 2.61333333rem;
+    bottom:0px;
+    background-color:#FFFFFF;
+}
+ .footer li{
+    float: left;
+    width: 33.333333%;
+    height: 2.61333333rem;
+    position:relative
+}
+.footer-title {
+    font-size: 0.53333333rem;
+    text-align:center;
+    position:absolute;
+    bottom:0.16rem;
+    width:100%;
+} 
+ .order {
+    background: url("../P-images/1.png") no-repeat center 0.4rem;
+    background-size: 20% auto;
+}
+.myOrder {
+    background: url("../P-images/2.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+}
+.balance {
+    background: url("../P-images/3-3.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+    color: #FF8F33;
+} 

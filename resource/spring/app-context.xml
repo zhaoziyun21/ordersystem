@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="  
+	http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context   
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd "> 
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:conf/jdbc.properties</value>
+				<value>classpath:conf/hibernate.properties</value>
+				<value>classpath:conf/messageResource.properties</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 引用多个数据源 -->
+	<import resource="datasource/app-datasource-mysql.xml" />
+	<import resource="datasource/app-datasource-sqlServer.xml" />
+	<!-- common -->
+	<import resource="app-resources.xml" /> 
+	<import resource="spring-scheduled.xml" />
+ 	<!-- <import resource="app-scheduling.xml" /> -->
+	<!-- base Start -->
+ 	<import resource="base/app-dao-base.xml" /> 
+ 	<import resource="base/app-service-base.xml" /> 
+	<import resource="base/app-action-base.xml" /> 
+	<!-- base End -->
+	
+	<!-- auth Start -->
+ 	<import resource="auth/app-action-auth.xml" /> 
+ 	<import resource="auth/app-service-auth.xml" /> 
+	<import resource="auth/app-dao-auth.xml" /> 
+	<!-- auths End -->
+	
+	<!-- order Start -->
+ 	<import resource="order/app-action-order.xml" /> 
+ 	<import resource="order/app-service-order.xml" /> 
+	<import resource="order/app-dao-order.xml" /> 
+	<!-- order End -->
+	
+	<!-- product Start -->
+ 	<import resource="product/app-action-product.xml" /> 
+ 	<import resource="product/app-service-product.xml" /> 
+	<import resource="product/app-dao-product.xml" /> 
+	<!-- product End -->
+ 
+<!-- 	<bean class="com.kssj.order.InitOrderFood" id="init"> -->
+<!-- 		<property name="xOrdersService" ref="xOrdersService"></property> -->
+<!-- 	</bean> -->
+</beans>

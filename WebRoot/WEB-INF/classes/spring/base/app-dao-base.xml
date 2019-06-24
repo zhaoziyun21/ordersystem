@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="  
+	http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context   
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd"> 
+	
+	<bean id="genericDao" abstract="true" class="com.kssj.frame.dao.impl.GenericDaoImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"/>
+   		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+   	<bean id="baseDao" abstract="true" class="com.kssj.frame.dao.impl.BaseDaoImpl" parent="genericDao"/>
+	<bean id="pubDao" name="pubDao" class="com.kssj.frame.dao.PubDao" >
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+	
+	<!-- =======================以下是基础平台dao配置=========================== -->
+</beans>

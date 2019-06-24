@@ -1,0 +1,49 @@
+html {
+	background:url(../P-images/index_bg.png) no-repeat center center;
+	background-size:cover;
+}
+.denglu {
+	margin-top:10.533333rem;
+}
+.denglu li{
+	margin:0 auto;
+}
+.denglu-2,.denglu-3 {
+	position:relative;
+	height:2.1333333rem;
+	width:13.3333333rem;
+}
+.denglu .denglu-3{
+	margin:1.52rem auto;
+}
+#denglubtn {
+	box-shadow:5px 5px 100px 1px #FF8F33; 
+}
+.denglu-5 {
+	height:2.1333333rem;
+	width:13.3333333rem;
+}
+#userName,#password {
+	height:2.1333333rem;
+	width:10.1333333rem;
+	background-color:#FFFFFF;
+	border-radius:1.066666667rem;
+	font-size:0.8rem;
+	padding-left:3.2rem;
+	background-color:#FFFFFF;
+}
+#denglubtn {
+	height:2.1333333rem;
+	width:13.3333333rem;
+	background-color:#FF8F33;
+	border-radius:1.066666667rem;
+	color:#FFFFFF;
+	font-size:0.8rem;
+}
+.denglu-2 span,.denglu-3 span {
+	font-size:0.8rem;
+	color:#C2C0C0;
+	position:absolute;
+	left:1.12rem;
+	top:0.56333333rem;
+}

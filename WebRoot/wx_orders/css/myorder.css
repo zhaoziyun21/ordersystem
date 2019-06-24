@@ -1,0 +1,229 @@
+.header {
+    height: 1.9466667rem;
+    background-color: #FF8F33;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 1.9466667rem;
+    text-align: center;
+}
+.header>span {
+	background:url(../P-images/whide-down.png) no-repeat center right;
+	padding-right:0.74666667rem;
+	background-size:15%;
+}
+.header ul {
+	width:7.613333rem;
+	font-size:0.96rem;
+	font-family:PingFang-SC-Medium;
+	color:#444444;
+	margin:0 auto;
+	position:relative;
+	z-index: 9999;
+	display:none;
+	text-align:left;
+}
+.header li {
+	position:relative;
+	height:1.806667rem;
+	line-height:1.806667rem;
+	background-color:#FFFFFF;
+	font-size: 0.8rem;
+}
+ .header li span {
+	margin-left:1.6533333rem;
+} 
+ .header li div {
+	width:0.8933333rem;
+	height:0.8933333rem;
+	border:1px solid #F2F2F2;
+	border-radius:50%;
+	box-sizing:border-box;
+	position:absolute;
+	top:0.4rem;
+	right:0.8rem;
+}
+.triangle {
+	width: 1.263965rem;
+    height: 1.263965rem;
+    position: absolute;
+    transform: rotate(135deg);
+    top: 2rem;
+    left: 9.5rem;
+    background-color: #FFFFFF;
+    display:none;
+}
+.choose {
+	color:#FF8F33;
+}
+.choosed {
+	background:url(../P-images/success.png) no-repeat center;
+	background-size:100%;
+}
+.allMeal {
+	margin-bottom:2.61333333rem;
+}
+.allMeal .all-meal {
+    padding: 0.88rem 0rem 0rem 0rem;
+    border-bottom: 1px solid #F3F3F3;
+    font-family:PingFang-SC-Medium;
+}
+.meal{
+    width: 5.76rem;
+    height: 4.10666667rem;
+    background-color: #0068B6;
+    float: left;
+    margin-left: 1rem;
+}
+.meal-det {
+    width: 90%;
+    height: 4.10666667rem;
+    float: left;
+    margin-left: 1rem;
+}
+.meal-det-b {
+	height: 4.10666667rem;
+    float: left;
+    margin-left: 1rem;
+}
+.total-meal {
+	padding-bottom:1.456rem;
+	margin-left:0.8rem;
+	margin-right:0.8rem;
+}
+.mealName {
+    float:left;
+    color: #333333;
+    font-size: 0.8rem;
+}
+.object {
+    float:right;
+    color: #999999;
+    font-size: 0.64rem;
+    margin-top: 0.6rem;
+}
+.detail {
+    float:right;
+    color: #FF8F33;
+    font-size: 0.64rem;
+}
+.detail img{
+	margin-left: 0.2rem;
+    width: 0.6rem;
+    vertical-align:middle;
+}
+.total {
+    color: #999999;
+    font-size: 0.64rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    float:left;
+}
+.orderTime {
+    float: left;
+    color: #666666;
+    font-size: 0.64rem;
+}
+.isCancel {
+    float: right;
+    width: 3.33333333rem;
+    height: 0.95rem;
+    font-size: 0.426666667rem;
+    line-height: 0.95rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF8F33;
+    border-radius: 3px;
+}
+.meal-det-top {
+    margin-top: 0.266666667rem;
+}
+.NoCancel {
+    float: right;
+    width: 3.33333333rem;
+    height: 0.95rem;
+    font-size: 0.426666667rem;
+    line-height: 0.95rem;
+    text-align: center;
+    color: #666666;
+    background-color: #E8E8E8;
+    border-radius: 3px;
+}
+.total-num {
+	height:2.3717328rem;
+	font-size:0.8rem;
+	line-height:2.3717328rem;
+	color:#666666;
+	border-bottom: 2px solid #DBDBDB;
+	padding-left:0.8rem;
+	font-weight: 600;
+}
+.eve-meal {
+	border-bottom: 1px solid #DBDBDB;
+	padding-top:1rem;
+}
+.detail-meal {
+	background-color:#EEEEEE;
+	display:none;
+	position:relative;
+}
+.footer {
+	border-top:1px solid #EEEEEE;
+    position: fixed;
+    width: 100%;
+    height: 2.91333333rem;
+    bottom:0px;
+    background-color:#FFFFFF;
+}
+ .footer li{
+    float: left;
+    width: 33.333333%;
+    height: 2.61333333rem;
+    position:relative
+}
+.footer-title {
+    font-size: 0.53333333rem;
+    text-align:center;
+    position:absolute;
+    bottom:0.16rem;
+    width:100%;
+} 
+ .order {
+    background: url("../P-images/1.png") no-repeat center 0.4rem;
+    background-size: 20% auto;
+}
+.myOrder {
+    background: url("../P-images/2-2.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+     color: #FF8F33;
+}
+.balance {
+    background: url("../P-images/3.png") no-repeat center 0.5rem;
+    background-size: 15% auto;
+}
+.again {
+	float: right;
+    width: 3.33333333rem;
+    height: 0.95rem;
+    font-size: 0.426666667rem;
+    line-height: 0.95rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF8F33;
+    border-radius: 3px;
+    position:absolute;
+    top:0.6rem;
+    right:1rem;
+}
+#mask {
+	z-index: 9998;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	display:none;
+	margin-top:1.9466667rem;
+}

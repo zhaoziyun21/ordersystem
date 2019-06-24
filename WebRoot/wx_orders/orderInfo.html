@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>提交订单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="./css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/orderInfo.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+	        <div class="title">提交订单</div> 
+        </div>
+        <div class="accountMsg">
+        	<div class="accountName">
+        		账户：<span>李书恒</span>
+        	</div>
+        	<div class="accountBalance">
+        		余额：<span>666</span>
+        	</div>
+        </div>
+        <div>
+    		<div class="buyCar-bottom">
+    				<ul id="append">
+    					 <li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li>
+    					<li>
+    						<div class="car-desc">
+    							套餐A（鱼香茄子+可乐）
+    						</div>
+    						<div class="car-num">
+    							<span class="reduce">-</span>
+    							<span class="number">3</span>
+    							<span class="add">+</span>
+    						</div>
+    					</li> 
+    				</ul>
+    			</div>
+    	</div>
+    	
+    	<div class="footer">
+    		<div class="footer-l">
+    			<span class="totalPay">总计：￥65</span>
+    		</div>
+    		<div class="footer-r">
+    			提交订单
+    		</div>
+    		
+    	</div>
+    </div>
+   <div id="mask"></div>
+
+</body>
+<script type="text/javascript">
+	$(function(){
+		$(".reduce").off().on("click",function(){
+			var s=$(this).siblings(".number").html();
+			s--;
+			if(s==0||s<0){
+				$(this).parent().parent().remove();
+			}
+			$(this).siblings(".number").html(s);
+		})
+		$(".add").off().on("click",function(){
+			var s=$(this).siblings(".number").html();
+			s++;
+			$(this).siblings(".number").html(s);
+		})
+	})
+</script>
+</html>

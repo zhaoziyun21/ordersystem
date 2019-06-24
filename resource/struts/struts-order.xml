@@ -1,0 +1,47 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- order -->
+	<package name="order" extends="myDefault" namespace="/order">
+		<!-- 菜谱 -->
+		<action name="*XFood" class="xFoodAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		<!-- 公告 -->
+		<action name="*XNotice" class="xNoticeAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		<!-- 派送范围 -->
+		<action name="*XFoodSendRegion" class="xFoodSendRegionAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		<!-- 派送地址 -->
+		<action name="*XFoodSendAddress" class="xFoodSendAddressAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+		
+		<!-- 订单 -->
+		<action name="*XOrders" class="xOrdersAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	<package name="wechat" extends="myDefault" namespace="/wechat">
+		<!-- wechat -->
+		<action name="*WeChat" class="weChatAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+	
+	<!-- 在线支付 -->
+	<package name="onlinePay" extends="myDefault" namespace="/onlinePay">
+		<!-- wechat -->
+		<action name="*OnlinePay" class="onlinePayAction" method="{1}">
+			<result>${forwardPage}</result>
+		</action>
+	</package>
+</struts>
+
+		

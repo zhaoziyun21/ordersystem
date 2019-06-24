@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="  
+	http://www.springframework.org/schema/beans   
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context   
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+	http://www.springframework.org/schema/aop  
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd  
+	http://www.springframework.org/schema/tx  
+	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- 开启定时任务 -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref local="orderTrigger" />
+				<!-- <ref local="synchronTrigger" /> -->
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 订单_配置定时任务和时间 -->
+	<bean name="updateOrderQuartz" class="com.kssj.quartz.UpdateOrderQuartz" />
+	<bean id="orderTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+				<property name="targetObject" ref="updateOrderQuartz" />
+				<property name="targetMethod" value="updateOrderRecStatus" />
+			</bean>
+		</property>
+		<property name="cronExpression">
+			<!-- 提醒时间  每天晚上11点触发-->
+			<value>0 0 23 ? * *</value> 
+		</property>
+	</bean>
+	
+	<!-- 组织架构_配置定时任务和时间 -->
+	<!-- <bean name="organizationQuartz" class="com.kssj.quartz.OrganizationQuartz" />
+	<bean id="synchronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+				<property name="targetObject" ref="organizationQuartz" />
+				<property name="targetMethod" value="synchronData" />
+			</bean>
+		</property>
+		<property name="cronExpression">
+			提醒时间  每天凌晨12点触发
+			<value>0 0 0 ? * *</value>
+		</property>
+	</bean> -->
+
+</beans>

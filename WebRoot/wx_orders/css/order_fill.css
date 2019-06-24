@@ -1,0 +1,259 @@
+body {
+	background: #f5f5f5;
+}
+#container {
+	padding-bottom: 1.7rem;
+}
+#consignee_infor {
+	width: 7.26rem;
+	height: 1.08rem;
+	padding: 0.26rem 0 0.26rem 0.24rem;
+	background: #fff;
+	margin-top: 0.88rem;
+}
+#consignee_infor .name {
+	font-size: 0.28rem;
+	color: #414141;
+	line-height: 0.3rem;
+}
+#consignee_infor .name p {
+	float: left;
+	margin-right: 0.45rem;
+}
+#consignee_infor .name .default {
+	width: 0.78rem;
+	height: 0.28rem;
+	border: 1px solid #ff0000;
+	color: #ff0000;
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: 0.28rem;
+	border-radius: 0.05rem;
+}
+#consignee_infor .address {
+	font-size: 0.24rem;
+	color: #414141;
+	position: relative;
+}
+#consignee_infor .address p {
+	width: 6.16rem;
+	line-height: 0.3rem;
+	margin-top: 0.2rem;
+}
+#consignee_infor .address img {
+	width: 0.14rem;
+	height: 0.24rem;
+	position: absolute;
+	top: 0;
+	right: 0.24rem;
+}
+#noConsignee {
+	display: none;
+	width: 100%;
+	height: 1.6rem;
+	background: #fff;
+	margin-top: 0.88rem;
+	position: relative;
+}
+#noConsignee .tips {
+	width: 0.46rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 50%;
+	left: 2.08rem;
+	margin-top: -0.23rem;
+} 
+#noConsignee p {
+	font-size: 0.34rem;
+	color: #ff0202;
+	line-height: 1.6rem;
+	float: left;
+	margin-left: 2.8rem;
+}
+#noConsignee .addTo {
+	width: 0.14rem;
+	height: 0.24rem;
+	position: absolute;
+	top: 50%;
+	right: 0.24rem;
+	margin-top: -0.12rem;
+}
+#goods_infor {
+	margin-top: 0.24rem;
+	background: #fff;
+}
+#goods_infor h2 {
+	width: 7.26rem;
+	height: 0.48rem;
+	padding-left: 0.24rem;
+	font-size: 0.2rem;
+	color: #727272;
+	line-height: 0.48rem;
+}
+#goods_infor li {
+	width: 7.26rem;
+	height: 1.35rem;
+	padding-left: 0.24rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-top: 1px solid #e4e4e4;
+	position: relative;
+}
+#goods_infor li .goodsImg {
+	float: left;
+	width: 1.82rem;
+	height: 1.30rem;
+	border: 1px solid #d6d6d6;
+}
+#goods_infor li .goodsImg img {
+	width: 100%;
+	height: 100%;
+}
+#goods_infor li .infor {
+	width: 4.9rem;
+	height: 100%;
+	float: left;
+	margin-left: 0.2rem;
+	position: relative;
+}
+.infor .name {
+	font-size: 0.24rem;
+	color: #333;
+	margin-top: 0.1rem;
+	width: 100%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.infor .color {
+	font-size: 0.24rem;
+	color: #727272;
+	line-height: 0.24rem;
+	margin: 0.14rem 0;
+}
+.infor .price {
+	font-size: 0.24rem;
+	color: #ff0000;
+}
+.infor .num {
+	font-size: 0.24rem;
+	color: #414141;
+	position: absolute;
+	right: 0;
+	bottom: 0.2rem;
+}
+#total {
+	margin-top: 0.24rem;
+	font-size: 0.28rem;
+	color: #333;
+	background: #fff;
+}
+#total li {
+	width: 7.02rem;
+	height: 0.9rem;
+	padding: 0 0.24rem;
+}
+#total li.goods_total {
+	border-bottom: 1px solid #e4e4e4;
+}
+#total li p {
+	line-height: 0.9rem;
+}
+#total li .text {
+	float: left;
+}
+#total li .price {
+	float: right;
+}
+#total li .express {
+	width: 1.18rem;
+	height: 0.48rem;
+	border: 1px solid #67a9fe;
+	color: #67a9fe;
+	border-radius: 0.1rem;
+	line-height: 0.48rem;
+	text-align: center;
+	float: right;
+	margin-top: 0.2rem;
+	margin-right: 0.26rem;
+}
+#balance {
+	width: 7.08rem;
+	height: 0.98rem;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	padding-left: 0.42rem;
+	-moz-box-shadow:0px -6px 6px rgba(0,0,0,.1); 
+	-webkit-box-shadow:0px -6px 6px rgba(0,0,0,.1);
+	box-shadow:0px -6px 6px rgba(0,0,0,.1);
+}
+#balance .center {
+	height: 100%;
+	float: right;
+	margin-right: 0.26rem;
+}
+#balance .center p {
+	font-size: 0.28rem;
+	color: #333;
+	text-align: right;
+	line-height: 0.98rem;
+}
+#balance .center p i {
+	font-style: normal;
+	color: #ff0000;
+}
+#balance .right {
+	width: 2.8rem;
+	height: 100%;
+	float: right;
+	background: #67a9fe;
+	color: #fff;
+	text-align: center;
+	line-height: 0.98rem;
+	font-size: 0.32rem;
+}
+#model {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+#model .box {
+	width: 5.5rem;
+	height: 2.4rem;
+	background: #fff;
+	border-radius: 0.2rem;
+	margin: 5.18rem auto;
+}
+#model .box .text {
+	width: 100%;
+	height: 1.42rem;
+	font-size: 0.32rem;
+	color: #414141;
+	line-height: 1.42rem;
+	text-align: center;
+	border-bottom: 1px solid #e4e4e4;
+}
+#model .choice {
+	width: 100%;
+	height: 0.97rem;
+}
+#model .choice p {
+	float: left;
+	font-size: 0.28rem;
+	width: 2.74rem;
+	text-align: center;
+	line-height: 0.97rem;
+}
+#model .choice .fl {
+	border-right: 1px solid #e4e4e4;
+	color: #727272;
+}
+#model .choice .fr {
+	color: #67a9fe;
+}

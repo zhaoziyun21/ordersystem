@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>订餐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="./css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/msgbox.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+           请选择您的点餐类型
+        </div>
+       <div class="chooseType">
+       	<ul>
+       		<li class="orderType">
+       			给自己点餐&gt;&gt;
+       		</li>
+       		<li class="orderType" id="guestOrder">
+       			点客餐&gt;&gt;
+       		</li>
+       		<li class="orderType" id="leaderOrder">
+       			点领导餐&gt;&gt;
+       		</li>
+       		<li class="orderOthers">
+       			指定人点餐
+       		</li>
+       		<li class="ordersuccess">
+       			您的餐由XX负责！
+       		</li>
+       	
+       	</ul>
+       </div>
+        <div class="footer">
+            <ul>
+                <li class="order">
+                    <div class="footer-title">订餐</div>
+                </li>
+               <li class="myOrder">
+                    <div class="footer-title">我的订单</div>
+                </li>
+                <li class="balance">
+                    <div class="footer-title">余额</div>
+                </li>
+            </ul>
+        </div>
+        <div class="guest">
+        	<ul>
+        		<li class="guest-top">请输入客人姓名</li>
+        		<li class="guest-middle"><input type="text"></li>
+        		<li class="guest-bottom"><input type="button" value="确定"></li>
+        	</ul>
+        </div>
+         <div class="leader">
+        	<ul>
+        		<li class="leader-top">领导姓名</li>
+        		<li class="leader-middle"><input type="text"></li>
+        		<li class="leader-bottom"><input type="button" value="确定"></li>
+        	</ul>
+        </div>
+        <div class="orderOth">
+        	<div class="orderOth-title">请选择你指定的人</div>
+        	<ul>
+        		<li class="department"><input type="text" placeholder="输入部门"></li>
+        		<li class="orderName"><input type="text" placeholder="输入姓名"></li>
+        		<li class="reset"><input type="button" value="重置"></li>
+        		<li class="confirm"><input type="button" value="确定"></li>
+        	</ul>
+        </div>
+    </div>
+	 <div id="mask"></div>
+</body>
+
+</html>

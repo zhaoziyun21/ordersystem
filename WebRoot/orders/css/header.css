@@ -1,0 +1,59 @@
+/*头部*/
+.header {
+    height: 70px;
+    background-color: #FF8F33;
+    width: 100%;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family:"Microsoft yahei";
+}
+.order {
+    height: 70px;
+}
+.order-left {
+    float: left;
+    line-height: 70px;
+    color: #FFF;
+    font-size: 18px;
+    margin-left: 22px;
+}
+.order-right {
+    float: right;
+    line-height: 70px;
+    margin-right:53px; 
+    font-weight: 700;
+    position:relative;
+}
+
+.order-right span{
+    color: #FFF;
+    font-size: 14px;
+}
+.myorder {
+    cursor: pointer;
+    display: inline-block;
+    width: 78px;
+    box-sizing: border-box;
+    text-align:center;
+    height:70px;
+}
+.login-r {
+ position: relative;
+ left: 8px;
+ top:-1px;
+}
+.order-right ul{
+	color:#FFFFFF;
+	width:74px;
+	font-size:14px;
+	position:absolute;
+	left:278px;
+	top:70px;
+	display:none;
+	z-index:2;
+}
+.active {
+	border-bottom:2px solid #FFF;
+}

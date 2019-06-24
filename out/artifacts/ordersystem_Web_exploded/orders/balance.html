@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>账户余额</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/balance.css">
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/balance.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+		<div class="contain order">
+			<div class="order-left">订餐系统</div>
+			<div class="order-right">
+				<a href="javascript:;" class="myorder">我的订单</a> <a
+					href="javascript:;" class="login">李书恒 <span class="login-r">∨</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	
+	<!-- 订单信息开始部分 -->
+	<div class="contain order-object">
+		<div class="object-left">账户余额：<span>300.00</span></div>
+	</div>
+	<!-- 订单信息部分结束 -->
+	
+	<!-- 消费明细部分开始 -->
+	<div class="consumption-list contain">
+		<div class="list-name">消费明细</div>
+		<div class="wrap">
+		    <table border="1">
+		        <thead>
+		        <tr>
+		            <th width="232px">记录</th>
+		            <th width="290px">出入账金额</th>
+		            <th width="290px">余额</th>
+		            <th width="260px">时间</th>
+		        </tr>
+		        </thead>
+		        <tbody id="j_tb">
+		        <tr>
+		            <td> 支出</td>
+		            <td>-25</td>
+		            <td>200</td>
+		            <td>2017-03-03 12:00</td>
+		
+		        </tr>
+		        <tr>
+		            <td>收入</td>
+		            <td>+50</td>
+		            <td>200</td>
+		            <td>2017-03-03 12:00</td>
+		        </tr>
+		         <tr>
+		            <td> 支出</td>
+		            <td>-25</td>
+		            <td>200</td>
+		            <td>2017-03-03 12:00</td>
+		
+		        </tr>
+		         <tr>
+		            <td> 支出</td>
+		            <td>-25</td>
+		            <td>200</td>
+		            <td>2017-03-03 12:00</td>
+		
+		        </tr>
+		        </tbody>
+		    </table>
+		</div>
+	</div>
+</body>
+</html>
